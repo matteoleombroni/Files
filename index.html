@@ -72,24 +72,23 @@
   .head::before { content: counter(paper) ") "; font-weight: 600; font-size: 15.5px; }
   .head { margin: 0; line-height: 1.35; }
   .paper h3 { display: inline; font-size: 15.5px; font-weight: 600; margin: 0; }
-  .paper h3 a { color: var(--text); }
-  .paper h3 a:hover { color: var(--accent); }
+  .paper h3 a { color: var(--accent); font-weight: 700; }
   .authors { color: var(--muted); font-size: 14px; }
   .note { font-size: 12.5px; color: var(--muted); margin: 4px 0 0; line-height: 1.45; }
 
-  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-top: 7px; font-family: var(--sans); font-size: 10.5px; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-top: 7px; font-family: var(--sans); font-size: 10px; }
   .venue { font-family: var(--serif); font-size: 13.5px; font-style: italic; font-weight: 600; margin-right: 6px; }
   .venue .status { font-style: normal; font-weight: 400; }
   .abs-btn {
     display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
-    font: inherit; font-weight: 500; color: var(--accent); background: var(--accent-soft);
-    border: 1px solid transparent; border-radius: 5px; padding: 2px 8px;
+    font: inherit; font-weight: 500; color: var(--chip-text); background: var(--chip-bg);
+    border: 1px solid transparent; border-radius: 5px; padding: 2px 7px; line-height: inherit;
   }
-  .abs-btn:hover { border-color: var(--accent); }
-  .abs-btn svg { width: 9px; height: 9px; transition: transform .25s ease; }
+  .abs-btn:hover { color: var(--accent); }
+  .abs-btn svg { width: 8px; height: 8px; transition: transform .25s ease; }
   .abs-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
   .chip {
-    color: var(--chip-text); background: var(--chip-bg); border-radius: 5px; padding: 2px 8px; font-weight: 500;
+    color: var(--chip-text); background: var(--chip-bg); border: 1px solid transparent; border-radius: 5px; padding: 2px 7px; font-weight: 500;
   }
   .chip:hover { color: var(--accent); text-decoration: none; }
 
